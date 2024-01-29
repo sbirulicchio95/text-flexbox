@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prove di Flexbox</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+
+  h2 {
+    font-family: montserrat;
+    font-weight: 800;
+  }
+
+  p {
+    font-family: montserrat;
+  }
+
+ .contenitore {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+ }
+  .single-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+    overflow: hidden;
+    min-width: fit-content;
+
+  }
+
+   .immagine {
+    object-fit: cover;
+    width: 280px;
+    margin-bottom: 10px;
+    object-position: 90% bottom;
+    aspect-ratio: 1 / 1;
+   }
+
+  .testi-promo {
+    padding: 0 20px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .testi-promo {
+    line-height: 10%;
+  }
+
+  .testi-promo  p{
+    margin-bottom: 16px;
+  }
+
+  .bottone {
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    width: 100%;
+   }
+
+  button:hover {
+  background-color: red;
+  color: white;
+  }
+
+  .single-box:hover {
+    box-shadow: 5px 5px 15px 5px #A80000
+
+  }
+  </style>
+</head>
+
+
+<body>
+ <div class="contenitore">
+  <div class="single-box">
+    <img class="immagine" src="https://gruppologica-cdn.gestionaleauto.com/wp-content/uploads/sites/4/2023/11/c3_promo_header.jpg" alt="c3_promo_header">
+    <div class="testi-promo">
+      <h2> 
+        Citroen C3
+      </h2>
+      <p>
+        Da 69 euro / mese
+      </p> 
+          <a href='https://www.theoremaonline.com/landing-promozione-citroen-c3-biella-torino-ivrea/'> <button class="bottone">
+          Scopri la promo
+          </button> </a>
+  </div>
+  </div>
+  <div class="single-box">
+    <img class="immagine" src="https://gruppologica-cdn.gestionaleauto.com/wp-content/uploads/sites/4/2023/11/ds4_promo_header.jpg" alt="ds4_promo_header">
+    <div class="testi-promo">
+    <h2> 
+      DS4
+    </h2>
+    <p>
+      da 109 euro al mese
+    </p> 
+    <a href='https://www.theoremaonline.com/landing-promozione-ds4-torino/'> <button class="bottone">
+      Scopri la promo
+    </button> </a>
+  </div>
+  </div>
+
+  <div class="single-box">
+    <img class="immagine" src="https://gruppologica-cdn.gestionaleauto.com/wp-content/uploads/sites/4/2023/11/208_promo_header.jpg" alt="208_promo_header">
+    <div class="testi-promo">
+    <h2> 
+      Opel Corsa
+    </h2>
+    <p>
+      da 109 euro al mese
+    </p> 
+    <a href='https://www.theoremaonline.com/landing-promozione-peugeot-208-torino-biella-ivrea/'> <button class="bottone">
+      Scopri la promo
+    </button> </a>
+  </div>
+  </div>
+
+  <div class="single-box">
+    <img class="immagine" src="https://gruppologica-cdn.gestionaleauto.com/wp-content/uploads/sites/4/2023/11/2008_promo_header.jpg" alt="corsa_promo_header">
+    <div class="testi-promo">
+    <h2> 
+      Opel Corsa
+    </h2>
+    <p>
+      da 109 euro al mese
+    </p> 
+    <a href='https://www.theoremaonline.com/landing-promozione-peugeot-2008-biella-torino-ivrea/''> <button class="bottone">
+      Scopri la promo
+    </button> </a>
+  </div>
+</div>
+</body>
+
+</html>
